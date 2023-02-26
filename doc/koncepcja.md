@@ -26,8 +26,7 @@ Ustalane są takie rzeczy jak:
 
 Firma w ramach umowy ponosi koszty, głównie koszt sprzętu i serwis od jego producenta. Suma poszczególnych kosztów to realne koszty umowy.
 
-Przykład: Instalacja i realizacja sieci SIP.
-===
+### Przykład: Instalacja i realizacja sieci SIP.
 
 Wartość umowy:      150 000 zł
 Planowane koszty:   100 000 zł
@@ -37,8 +36,7 @@ Etapy projektu:
  - Konfirugracja telefonów:         start:  8 stycznia 2023, koniec: 15 stycznia 2023 (7 dni)
  - Montarz telefonów:               start: 16 stycznia 2023, koniec: 30 stycznia 2023 (14 dni)
 
-Realizacja
-===
+### Realizacja
 
 Realna realizacja etapów projektu:
  - Zamówienie i dostawa elementów: start:  1 stycznia 2023, koniec:  9 stycznia 2023 (poślizg o 2 dni: 9 dni)
