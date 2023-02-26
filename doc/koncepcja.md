@@ -87,4 +87,4 @@ Koszty poniesione w miesiącu:
  - Podstawowa opłata serwisowa: 5 000 zł
  - Nowy telefon SIP:            1 000 zł
 
-Wartość faktury dla klienta w sierpniu: __7 000 zł__
+Wartość faktury dla klienta w sierpniu: __6 000 zł__
