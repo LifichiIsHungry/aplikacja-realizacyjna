@@ -12,10 +12,42 @@ Firma posiada klientów. Klienci są identyfikowani danymi:
  - Osoba kontaktowa (Imię, Nazwisko, Stanowisko, Telefon, E-mail)
 
 Z klientami są podpisywane umowy:
- - Jednorazowe
  - Długo-terminowe
+ - *(Przyszłościowo)* Jednorazowe
 
-# Umowy jednorazowe
+# Umowy długo-terminowe
+Realozowanie usługi przez dłuższy czas, na przykład regularne dostawy maretiałów albo usługi serwisowe.
+Określane są:
+ - Osoba odpowiedzialna (opiekun handlowy)
+ - Data podpisania umowy
+ - Data wygaśnięcia umowy
+ - Okres rozliczeniowy (dzienny czy miesięczny)
+
+Sposób gromadzenia kosztów jest zależny od natury usługi. Generalnie jednak, co miesiąc jest naliczany stały koszt w postaci opłaty serwisowej (co miesięczne koszty). Jeśli serwis wymagał kupna elementów dla klienta, to do następnej faktury można doliczyć koszt tych elementów.
+
+Opiekun handlowy może być poinformowany przez aplikację o niedługim wygaśnięciu umowy, tak aby mógł on wynegocjować z klientem jej przedłużenie.
+
+### Przykład, serwis telefonów SIP
+
+Data początku światczenia usług: 1 stycznia 2023
+Koniec świadczenia usług: 1 stycznia 2024
+Okres rozliczeniowy: miesiąc
+Podstawowa kwota naliczana co miesiąc (*podstawowy koszt*): 5 000 zł
+
+Koszty poniesione miesięcznie:
+ - Podstawowa opłata serwisowa: 5 000 zł
+ 
+Miesięcza wartość faktury dla klienta: __5 000 zł__
+
+W sierpniu uszkodził się jeden telefon i trzeba było kupić nowy za 1 000 zł
+
+Koszty poniesione w miesiącu:
+ - Podstawowa opłata serwisowa: 5 000 zł
+ - Nowy telefon SIP:            1 000 zł
+
+Wartość faktury dla klienta w sierpniu: __6 000 zł__
+
+# Przyszłościowo - Umowy jednorazowe
 Realizowany jest ustalony wcześniej przedział obowiązków, bez okresowego wystawiania faktur. 
 Ustalane są takie rzeczy jak:
  - Osoba odpowiedzialna (kierownik projektu)
@@ -56,35 +88,3 @@ Firma w trakcie realizacji poniosła koszty w ramach realizacji projektu:
 
 Koszty realne: 115 000 zł
 Realna marża:  150 000 zł - 115 000 zł = __35 000 zł__
-
-# Umowy długo-terminowe
-Realozowanie usługi przez dłuższy czas, na przykład regularne dostawy maretiałów albo usługi serwisowe.
-Określane są:
- - Osoba odpowiedzialna (opiekun handlowy)
- - Data podpisania umowy
- - Data wygaśnięcia umowy
- - Okres rozliczeniowy (dzienny czy miesięczny)
-
-Sposób gromadzenia kosztów jest zależny od natury usługi. Generalnie jednak, co miesiąc jest naliczany stały koszt w postaci opłaty serwisowej. Jeśli serwis wymagał kupna elementów dla klienta, to do następnej faktury można doliczyć koszt tych elementów.
-
-Opiekun handlowy może być poinformowany przez aplikację o niedługim wygaśnięciu umowy, tak aby mógł on wynegocjować z klientem jej przedłużenie.
-
-### Przykład, serwis telefonów SIP
-
-Data początku światczenia usług: 1 stycznia 2023
-Koniec świadczenia usług: 1 stycznia 2024
-Okres rozliczeniowy: miesiąc
-Podstawowa kwota naliczana co miesiąc (*podstawowy koszt*): 5 000 zł
-
-Koszty poniesione miesięcznie:
- - Podstawowa opłata serwisowa: 5 000 zł
- 
-Miesięcza wartość faktury dla klienta: __5 000 zł__
-
-W sierpniu uszkodził się jeden telefon i trzeba było kupić nowy za 1 000 zł
-
-Koszty poniesione w miesiącu:
- - Podstawowa opłata serwisowa: 5 000 zł
- - Nowy telefon SIP:            1 000 zł
-
-Wartość faktury dla klienta w sierpniu: __6 000 zł__
