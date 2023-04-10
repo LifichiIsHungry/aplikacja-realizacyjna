@@ -8,11 +8,11 @@ Konta użytkowników umożliwiają im poruszanie się po serwerze za pomocą SSH
 
 Logowanie się do serwera po SSH przy użyciu terminala:
 ```shell
-ssh _nazwa-użytkownika_@64.226.105.141
+ssh <nazwa-użytkownika>@64.226.105.141
 ```
 
 Logowanie się do serwera SFTP przy użyciu terminala:
 ```shell
-sftp _nazwa-użytkownika_@64.226.105.141
+sftp <nazwa-użytkownika>@64.226.105.141
 ```
 Do tego zalecany jest jednak program graficzny np. Filezilla.
