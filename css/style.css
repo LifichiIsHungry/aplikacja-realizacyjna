@@ -9,6 +9,7 @@
 
 html {
   font-size: 62, 5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,11 +29,25 @@ button {
   font-weight: bold;
   border: none;
   background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.primaryBtn:hover {
+  background: linear-gradient(86deg, rgb(91, 145, 236) 0%, rgb(43, 201, 253) 100%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .secondaryBtn {
   background: none;
   border: 1px solid #598ef3;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.secondaryBtn:hover {
+  background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
 }
 
 .NavDesktop {
@@ -139,9 +154,11 @@ header .header-right img {
   width: 100%;
 }
 
+.separator {
+  background-color: #cbd5e1;
+}
 .separator .container {
   padding: 1em 0;
-  background-color: #cbd5e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,4 +308,217 @@ footer p {
   text-align: center;
   background-color: #1e293b;
   font-size: 0.7rem;
+}
+
+@media (min-width: 1300px) {
+  .phoneLogo,
+  .navOpenBtn {
+    display: none;
+  }
+  .NavDesktop {
+    display: block;
+    margin: 2em;
+  }
+  .NavDesktop .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .NavDesktop .container .nav-links a {
+    margin: 0 1em;
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    text-decoration: none;
+  }
+  .NavDesktop .container .nav-links a:hover {
+    color: #598ef3;
+  }
+  .NavDesktop .container .nav-links .button {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .NavDesktop .container .nav-links .button:hover {
+    background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+  }
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  header {
+    margin: 5em 0;
+  }
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container .header-left {
+    margin: auto 0;
+  }
+  header .container .header-left h1 {
+    font-size: 3rem;
+  }
+  header .container .header-left p {
+    font-size: 1.5rem;
+  }
+  header .container .header-left--buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 80%;
+  }
+  header .container .header-left--buttons .primaryBtn {
+    font-size: 1.5rem;
+  }
+  header .container .header-left--buttons .secondaryBtn {
+    font-size: 1.5rem;
+  }
+  main .separator .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+    padding: 3em;
+  }
+  main .separator .container .separator-logos img {
+    margin: 0 50px;
+    width: 200px;
+  }
+  main .sectionTitle {
+    margin-top: 1em;
+    font-size: 4rem;
+  }
+  main .aboutUsBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .aboutUsBox p {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  main .aboutUsBox img {
+    width: 300px;
+  }
+  main .servicesBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3em;
+    margin: 4em 0;
+  }
+  main .servicesBox p {
+    margin: auto;
+    font-weight: normal;
+    font-size: 2.5rem;
+    width: 50%;
+  }
+  main .servicesBox span {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  main #contact {
+    padding-bottom: 8em;
+  }
+  main .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .contact .contact-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    border-right: 1px solid #959da7;
+    border-bottom: none !important;
+  }
+  main .contact .contact-left p {
+    font-size: 2rem !important;
+  }
+  main .contact .contact-right {
+    width: 50%;
+  }
+  main .contact .contact-right .inputField {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  main .contact .contact-right .inputField label {
+    font-size: 2rem !important;
+  }
+  main .contact .contact-right .inputField input {
+    min-width: 400px;
+    font-size: 1.2rem;
+    padding: 0 1em;
+  }
+  main .contact .contact-right button {
+    margin-top: 2em !important;
+    font-size: 1.2rem;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2em;
+  }
+  footer .container .nav-links a {
+    margin: 0 1em;
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    text-decoration: none;
+  }
+  footer .container .nav-links a:hover {
+    color: #598ef3;
+  }
+  footer .container .nav-links .button {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  footer .container .nav-links .button:hover {
+    background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+  }
 }/*# sourceMappingURL=style.css.map */

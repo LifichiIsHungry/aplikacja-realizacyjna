@@ -8,6 +8,7 @@
 
 html {
 	font-size: 62, 5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -31,11 +32,32 @@ button {
 		rgba(68, 129, 235, 1) 0%,
 		rgba(5, 190, 254, 1) 100%
 	);
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		background: linear-gradient(
+			86deg,
+			rgb(91, 145, 236) 0%,
+			rgb(43, 201, 253) 100%
+		);
+		transform: scale(1.1);
+	}
 }
 
 .secondaryBtn {
 	background: none;
 	border: 1px solid #598ef3;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		background: linear-gradient(
+			86deg,
+			rgba(68, 129, 235, 1) 0%,
+			rgba(5, 190, 254, 1) 100%
+		);
+	}
 }
 
 .NavDesktop {
@@ -141,9 +163,10 @@ header {
 }
 
 .separator {
+	background-color: #cbd5e1;
 	.container {
 		padding: 1em 0;
-		background-color: #cbd5e1;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -273,5 +296,218 @@ footer {
 		text-align: center;
 		background-color: #1e293b;
 		font-size: 0.7rem;
+	}
+}
+
+@media (min-width: 1300px) {
+	.phoneLogo,
+	.navOpenBtn {
+		display: none;
+	}
+
+	.NavDesktop {
+		display: block;
+		margin: 2em;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.nav-links {
+				a {
+					margin: 0 1em;
+					font-size: 1.5rem;
+					color: #cbd5e1;
+					text-decoration: none;
+
+					&:hover {
+						color: #598ef3;
+					}
+				}
+
+				.button {
+					font-size: 1.5rem;
+					cursor: pointer;
+
+					&:hover {
+						background: linear-gradient(
+							86deg,
+							rgba(68, 129, 235, 1) 0%,
+							rgba(5, 190, 254, 1) 100%
+						);
+					}
+				}
+			}
+		}
+	}
+
+	.container {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	header {
+		margin: 5em 0;
+		.container {
+			display: flex;
+
+			.header-left {
+				margin: auto 0;
+
+				h1 {
+					font-size: 3rem;
+				}
+
+				p {
+					font-size: 1.5rem;
+				}
+
+				&--buttons {
+					display: flex;
+					justify-content: space-evenly;
+					width: 80%;
+
+					.primaryBtn {
+						font-size: 1.5rem;
+					}
+					.secondaryBtn {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		.separator {
+			.container {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 50px;
+				padding: 3em;
+				.separator-logos {
+					img {
+						margin: 0 50px;
+						width: 200px;
+					}
+				}
+			}
+		}
+
+		.sectionTitle {
+			margin-top: 1em;
+			font-size: 4rem;
+		}
+
+		.aboutUsBox {
+			flex-direction: row;
+			justify-content: space-evenly;
+
+			p {
+				width: 50%;
+				font-size: 1.5rem;
+			}
+
+			img {
+				width: 300px;
+			}
+		}
+
+		.servicesBox {
+			display: flex;
+			align-items: center;
+			padding: 3em;
+			margin: 4em 0;
+
+			p {
+				margin: auto;
+				font-weight: normal;
+				font-size: 2.5rem;
+				width: 50%;
+			}
+
+			span {
+				width: 50%;
+				font-size: 1.5rem;
+			}
+		}
+
+		#contact {
+			padding-bottom: 8em;
+		}
+
+		.contact {
+			display: flex;
+
+			.contact-left {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 50%;
+				border-right: 1px solid #959da7;
+				border-bottom: none !important;
+				p {
+					font-size: 2rem !important;
+				}
+			}
+
+			.contact-right {
+				width: 50%;
+				.inputField {
+					display: flex;
+					justify-content: space-between !important;
+					label {
+						font-size: 2rem !important;
+					}
+					input {
+						min-width: 400px;
+						font-size: 1.2rem;
+						padding: 0 1em;
+					}
+				}
+				button {
+					margin-top: 2em !important;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	footer {
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 2em;
+
+			.nav-links {
+				a {
+					margin: 0 1em;
+					font-size: 1.5rem;
+					color: #cbd5e1;
+					text-decoration: none;
+
+					&:hover {
+						color: #598ef3;
+					}
+				}
+
+				.button {
+					font-size: 1.5rem;
+					cursor: pointer;
+
+					&:hover {
+						background: linear-gradient(
+							86deg,
+							rgba(68, 129, 235, 1) 0%,
+							rgba(5, 190, 254, 1) 100%
+						);
+					}
+				}
+			}
+		}
 	}
 }
