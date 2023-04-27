@@ -175,5 +175,24 @@ main {
 				font-size: 1.2rem;
 			}
 		}
+
+		.newProjectBox {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 2em;
+			background-color: #cbd5e1;
+			color: #000;
+			border-radius: 10px;
+			text-align: center;
+
+			.addNewProjectButton {
+				margin-top: 2em;
+				img {
+					width: 50px;
+				}
+			}
+		}
 	}
 }

@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62, 5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: "Source Sans 3", sans-serif;
+	background-color: #1e293b;
+	color: #cbd5e1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.primaryBtn {
+	font-weight: bold;
+	border: none;
+	padding: 1em;
+	color: #fff;
+	border-radius: 45px;
+
+	background: linear-gradient(
+		86deg,
+		rgba(68, 129, 235, 1) 0%,
+		rgba(5, 190, 254, 1) 100%
+	);
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		background: linear-gradient(
+			86deg,
+			rgb(91, 145, 236) 0%,
+			rgb(43, 201, 253) 100%
+		);
+		transform: scale(1.1);
+	}
+}
+
+.addInvoiceForm {
+	margin-top: 50px;
+	width: 800px;
+	background-color: #cbd5e1;
+	color: #000;
+	border-radius: 10px;
+
+	h2 {
+		margin: 2em 0;
+		text-align: center;
+		font-size: 2rem;
+	}
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 80%;
+	margin: 2em auto;
+
+	.inputField {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1em;
+
+		input {
+			background: none;
+			border: 1px solid #598ef3;
+			border-radius: 10px;
+			padding: 0 1em;
+		}
+
+		label {
+			font-size: 1.5rem;
+		}
+
+		select,
+		textarea {
+			width: 208px;
+			background: none;
+			border: 1px solid #598ef3;
+			border-radius: 10px;
+			padding: 0 1em;
+		}
+
+		textarea {
+			padding: 1em;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		text-align: right;
+		font-size: 0.8rem;
+		color: #466aad;
+	}
+
+	button {
+		margin: 1em 0 1em 0;
+		font-size: 1rem;
+	}
+}

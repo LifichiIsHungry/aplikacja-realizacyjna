@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Faktures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./../../css/style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div class="addProjectForm">
+        <h2>Dodawanie projektu</h2>
+        <form action="">
+            <div class="inputField">
+                <label for="projectName">Nazwa projektu:</label>
+                <input type="text" id="projectName">
+            </div>
+            <div class="inputField">
+                <label for="startDate">Data rozpoczęcia:</label>
+                <input type="text" id="startDate">
+            </div>
+            <div class="inputField">
+                <label for="plannedEnd">Planowane zakończenie:</label>
+                <input type="text" id="plannedEnd">
+            </div>
+            <div class="inputField">
+                <label for="expectedBruttoProfits">Przewidywane zyski brutto:</label>
+                <input type="text" id="expectedBruttoProfits">
+            </div>
+            <div class="inputField">
+                <label for="expectedNettoProfits">Przewidywane zyski netto:</label>
+                <input type="text" id="expectedNettoProfits">
+            </div>
+            <div class="inputField">
+                <label for="Organization">Organizacja:</label>
+                <input type="text" id="Organization">
+            </div>
+            <div class="inputField">
+                <label for="manager">Przypisany kierownik:</label>
+                <select name="manager">
+                    <option selected disabled>Kierownik</option>
+                    <option value="Pan 1">Pan 1</option>
+                    <option value="Pan 2">Pan 2</option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="manager">Przypisany opiekun:</label>
+                <select name="manager">
+                    <option selected disabled>Opiekun</option>
+                    <option value="Pan 1">Pan 1</option>
+                    <option value="Pan 2">Pan 2</option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="manager">Przypisany księgowy:</label>
+                <select name="manager">
+                    <option selected disabled>Księgowy</option>
+                    <option value="Pan 1">Pan 1</option>
+                    <option value="Pan 2">Pan 2</option>
+                </select>
+            </div>
+
+
+            <button type="submit" class="primaryBtn">Dodaj projekt</button>
+            <button type="submit" class="primaryBtn">Anuluj</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
