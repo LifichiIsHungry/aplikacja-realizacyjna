@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Faktures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/php/html/dodajUsluge/css/style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div class="addProjectForm">
+        <h2>Dodawanie usługi</h2>
+        <form action="/php/dodajUsluge.php">
+            <div class="inputField">
+                <label for="serviceName">Nazwa usługi:</label>
+                <input type="text" id="serviceName">
+            </div>
+            <div class="inputField">
+                <label for="plannedEndDate">Planowane zakończenie:</label>
+                <input type="text" id="plannedEndDate">
+            </div>
+            <div class="inputField">
+                <label for="plannedCost">Planowany koszt:</label>
+                <input type="text" id="plannedCost">
+            </div>
+            <div class="inputField">
+                <label for="project">Przypisane do projektu:</label>
+                <select name="project">
+                    <option selected disabled>Projekt</option>
+                    <option value="Projekt 1">Projekt 1</option>
+                    <option value="Projekt 2">Projekt 2</option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="comments">Uwagi:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+
+
+
+            <button type="submit" class="primaryBtn">Dodaj usługę</button>
+            <button type="submit" class="primaryBtn">Anuluj</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

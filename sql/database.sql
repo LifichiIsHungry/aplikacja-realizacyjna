@@ -1,27 +1,13 @@
 CREATE DATABASE App;
 USE App;
 
-CREATE TABLE Osoba(
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    imie VARCHAR(50) NOT NULL,
-    nazwisko VARCHAR(50) NOT NULL,
-    email VARCHAR(50),
-    telefon VARCHAR(50)
-);
-
 CREATE TABLE Organizacja(
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nazwa VARCHAR(255) NOT NULL,
     nip VARCHAR(13) NOT NULL,
     adres VARCHAR(255) NOT NULL,
     email VARCHAR(50),
-    telefon VARCHAR(50),
-
-    osoba_kontaktowa INT NOT NULL,
-    CONSTRAINT `osoba_id`
-        FOREIGN KEY (osoba_kontaktowa) REFERENCES Osoba(id)
-        ON DELETE RESTRICT
-        ON UPDATE CASCADE
+    telefon VARCHAR(50)
 );
 
 CREATE TABLE Pracownik(
@@ -68,7 +54,7 @@ CREATE TABLE Projekt(
     przewidywane_zyski DOUBLE(10, 2) NOT NULL,
     przewidywane_koszta DOUBLE(10, 2) NOT NULL,
     kary_umowne DOUBLE(10, 2) NOT NULL,
-    status_realizacji INT NOT NULL
+    status_realizacji VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Etap(

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Faktures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/php/html/dodajProjekt/css/style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div class="addProjectForm">
+        <h2>Dodawanie projektu</h2>
+        <form action="/php/dodajProjekt.php" method="post">
+            <input type="hidden" name="add_project">
+            <div class="inputField">
+                <label for="projectName">Nazwa projektu:</label>
+                <input type="text" name="projectName" required>
+            </div>
+            <div class="inputField">
+                <label for="startDate">Data rozpoczęcia:</label>
+                <input type="date" name="startDate" required>
+            </div>
+            <div class="inputField">
+                <label for="plannedEnd">Planowane zakończenie:</label>
+                <input type="date" name="plannedEnd" required>
+            </div>
+            <div class="inputField">
+                <label for="expectedProfits">Przewidywane zyski:</label>
+                <input type="number" step="0.01" name="expectedProfits" required>
+            </div>
+            <div class="inputField">
+                <label for="expectedExpenses">Przewidywane koszta:</label>
+                <input type="number" step="0.01" name="expectedExpenses" required>
+            </div>
+            <div class="inputField">
+                <label for="organization">Organizacja:</label>
+                <select name="organization" id="organization" required>
+                    <option hidden selected disabled></option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="seller">Przypisany handlowiec:</label>
+                <select name="seller" id="seller" required>
+                    <option hidden selected disabled></option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="manager">Przypisany opiekun:</label>
+                <select name="manager" id="manager" required>
+                    <option hidden selected disabled></option>
+                </select>
+            </div>
+            <div class="inputField">
+                <label for="accounting">Przypisany księgowy:</label>
+                <select name="accounting" id="accounting" required>
+                    <option hidden selected disabled></option>
+                </select>
+            </div>
+
+            <button type="submit" class="primaryBtn">Dodaj projekt</button>
+            <button type="button" class="primaryBtn" onclick="location.href = '/php/projekty.php'">Anuluj</button>
+        </form>
+    </div>
+</body>
+
+</html>

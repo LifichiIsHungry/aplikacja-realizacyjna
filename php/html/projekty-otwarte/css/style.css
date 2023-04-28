@@ -1,0 +1,280 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+
+button {
+  padding: 1em;
+  color: #fff;
+  border-radius: 45px;
+}
+
+.primaryBtn {
+  font-weight: bold;
+  border: none;
+  background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.primaryBtn:hover {
+  background: linear-gradient(86deg, rgb(91, 145, 236) 0%, rgb(43, 201, 253) 100%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.secondaryBtn {
+  background: none;
+  border: 1px solid #598ef3;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.secondaryBtn:hover {
+  background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+}
+
+.NavDesktop {
+  display: block;
+  margin: 2em;
+}
+.NavDesktop .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.NavDesktop .container .nav-links a {
+  margin: 0 1em;
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+.NavDesktop .container .nav-links a:hover {
+  color: #598ef3;
+}
+.NavDesktop .container .nav-links .button {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.NavDesktop .container .nav-links .button:hover {
+  background: linear-gradient(86deg, rgb(68, 129, 235) 0%, rgb(5, 190, 254) 100%);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+header .container {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 10px;
+}
+header .container a {
+  font-size: 1.7rem;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #000;
+}
+header .container a:hover {
+  background-color: #9dafc5;
+}
+
+.active {
+  background-color: #9dafc5 !important;
+}
+
+section {
+  margin-top: 3em;
+}
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  color: #000;
+  width: 20%;
+  margin-right: 3em;
+  background-color: #cbd5e1;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 600px;
+}
+aside h2 {
+  margin: 2em 0 1em 0;
+}
+aside .status {
+  padding: 0.5em 1.5em;
+  background-color: #ffe898 !important;
+}
+aside .aside-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+}
+aside .aside-nav a {
+  padding: 1em;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3rem;
+}
+aside .aside-nav a:hover {
+  background-color: #9dafc5;
+}
+
+main {
+  width: 80%;
+  background-color: #cbd5e1;
+  color: #000;
+  padding: 1em;
+  border-radius: 10px;
+}
+main .services table {
+  margin: 1em auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+main .services table th {
+  padding: 1.5em 3em;
+}
+main .services table td {
+  padding: 1em;
+  border-bottom: 1px solid #9dafc5;
+}
+main .services table td button {
+  color: #000;
+  padding: 1em 2em;
+}
+main .services table td .circle {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+main .services .addService {
+  margin: 4em 2em;
+}
+main .services .yellow {
+  background-color: #ffe898 !important;
+}
+main .services .green {
+  background-color: #00ff29 !important;
+}
+main .services .red {
+  background-color: #ff0000 !important;
+}
+main .invoices {
+  display: none;
+}
+main .invoices table {
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+main .invoices table th {
+  padding: 1.5em 3em;
+}
+main .invoices table td {
+  padding: 1em;
+  border-bottom: 1px solid #9dafc5;
+}
+main .invoices table td button {
+  color: #000;
+  padding: 1em 2em;
+}
+main .invoices table td .circle {
+  margin: 0 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+main .invoices .addService,
+main .invoices .addInvoice {
+  margin-top: 4em;
+  margin-left: 4em;
+}
+main .projectInfo {
+  display: none;
+  padding: 2em;
+}
+main .projectInfo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+main .projectInfo-header h2 {
+  font-size: 2rem;
+}
+main .projectInfo-header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 0 2em;
+  margin-left: 4em;
+  background-color: #ffe898;
+}
+main .projectInfo-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.3rem;
+  row-gap: 1em;
+  margin: 2em 0 2em 0;
+}
+main .projectInfo-table span {
+  text-align: right;
+}
+main .projectInfo-workers .workersTable {
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+main .projectInfo-workers .workersTable th {
+  padding: 1.5em 3em;
+}
+main .projectInfo-workers .workersTable td {
+  padding: 1em;
+  border-bottom: 1px solid #9dafc5;
+}/*# sourceMappingURL=style.css.map */
