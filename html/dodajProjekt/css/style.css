@@ -87,12 +87,13 @@ form .inputField input {
   border: 1px solid #598ef3;
   border-radius: 10px;
   padding: 0 1em;
+  width: 200px;
 }
 form .inputField label {
   font-size: 1.5rem;
 }
 form .inputField select {
-  width: 208px;
+  width: 200px;
   background: none;
   border: 1px solid #598ef3;
   border-radius: 10px;
