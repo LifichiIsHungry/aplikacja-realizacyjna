@@ -2,8 +2,6 @@
 require("lib/db.php");
 require("lib/check_session.php");
 
-exit();
-
 if(!isset($_REQUEST["id"])) {
     header("Location: /php/projekty.php");
 }
