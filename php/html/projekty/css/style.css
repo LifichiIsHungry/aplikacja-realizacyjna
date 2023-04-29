@@ -136,17 +136,25 @@ main .container {
 	gap: 20px;
 }
 main .container .projectBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 2em;
 	background-color: #cbd5e1;
 	color: #000;
 	border-radius: 10px;
 	text-align: center;
+	min-height: 450px;
 }
 main .container .projectBox-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	font-weight: normal;
 	font-size: 2rem;
 	margin-bottom: 1em;
+	min-height: 100px;
 }
 main .container .projectBox-info {
 	display: grid;
