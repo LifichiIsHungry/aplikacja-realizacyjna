@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Faktures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/php/html/organizacje/css/style.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <nav class="NavDesktop">
+        <div class="container">
+            <img src="/php/html/pracownicy/assets/logo.svg" alt="">
+            <div class="nav-links">
+                <button class="secondaryBtn button " onclick="location.href ='/php/logout.php'">Wyloguj</button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <a href="/php/projekty.php">Projekty</a>
+            <a href="/php/uslugi.php">Usługi</a>
+            <a href="/php/pracownicy.php">Pracownicy</a>
+            <a href="/php/organizacje.php" class="active">Organizacje</a>
+            <a href="/php/faktury.php">Faktury</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Organizacje</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nazwa organizacji</th>
+                        <th>NIP</th>
+                        <th>Adres</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Osoba kontaktowa</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-organizacje">
+                    <tr>
+                        <td>Organizacja jakaś fajna</td>
+                        <td>
+                            123123123
+                        </td>
+                        <td>Jakas 12, warszawa</td>
+                        <td>amalagocki@sanfaktures.co</td>
+                        <td>123123123</td>
+                        <td>amalagocki</td>
+                        <td><button class="secondaryBtn">Edycja</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button class="primaryBtn addService" id="button-add-new-employee"
+                onclick="location.href = '/php/dodajPracownika.php'"> Dodaj organizację </button>
+
+            </table>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
