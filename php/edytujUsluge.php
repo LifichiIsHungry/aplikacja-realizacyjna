@@ -12,7 +12,7 @@ if(isset($_REQUEST["apply_edits"])) {
     $values["realne_zakonczenie"] = $_REQUEST["realEndDate"];
     $values["realny_koszt"] = $_REQUEST["realCost"];
 
-    $smt = $db->prepare("UPDATE Usluga SET realne_zakonczenie=:realne_zakonczenie,realny_koszt=:realny_koszt");
+    $smt = $db->prepare("UPDATE Usluga SET realne_zakonczenie=:realne_zakonczenie,realny_koszt=:realny_koszt WHERE id=:id");
 
     header("Location: /php/uslugi.php");
 }

@@ -16,7 +16,6 @@ foreach ($smt->fetchAll() as $projekt) {
         <div class=\"projectBox-info\">
             <p>Planowany zysk:</p><span>".$projekt["przewidywane_zyski"]." zł</span>
             <p>Data zakończenia:</p><span>".$projekt["planowane_zakonczenie"]."</span>
-            <p>Status realizacji: </p><span>".$projekt["status_realizacji"]."</span>
         </div>
         <button class=\"secondaryBtn\" onclick=\"location.href = '/php/szczegoly-projektu.php?id=". $projekt["id"] ."'\">Szczegóły</button>
     </div>
