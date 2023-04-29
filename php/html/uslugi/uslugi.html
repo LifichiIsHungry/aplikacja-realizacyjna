@@ -20,7 +20,7 @@
         <div class="container">
             <img src="/php/html/uslugi/assets/logo.svg" alt="">
             <div class="nav-links">
-                <button class="secondaryBtn button ">Wyloguj</button>
+                <button class="secondaryBtn button " onclick="location.href ='/php/logout.php'">Wyloguj</button>
             </div>
         </div>
     </nav>
@@ -40,7 +40,6 @@
                 <thead>
                     <tr>
                         <th>Nazwa projektu</th>
-                        <th>Status</th>
                         <th>Nazwa usługi</th>
                         <th>Planowane zakończenie</th>
                         <th>Planowany koszt</th>
@@ -108,7 +107,7 @@
                     -->
                 </tbody>
             </table>
-            <button class="primaryBtn addService">Dodaj usługę</button>
+            <button class="primaryBtn addService" onclick="location.href = '/php/dodajUsluge.php'">Dodaj usługę</button>
         </div>
     </main>
 

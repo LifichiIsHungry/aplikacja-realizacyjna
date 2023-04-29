@@ -20,7 +20,7 @@
         <div class="container">
             <img src="/php/html/projekty-otwarte/assets/logo.svg" alt="">
             <div class="nav-links">
-                <button class="secondaryBtn button ">Wyloguj</button>
+                <button class="secondaryBtn button " onclick="location.href ='/php/logout.php'">Wyloguj</button>
             </div>
         </div>
     </nav>
@@ -50,7 +50,6 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Status</th>
                                 <th>Nazwa usługi</th>
                                 <th>Planowane zakończenie</th>
                                 <th>Planowany koszt</th>
@@ -58,8 +57,8 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody id="table-body-projekty">
+                            <!--<tr>
                                 <td>
                                     <div class="circle yellow"></div>
                                 </td>
@@ -110,7 +109,7 @@
                                 <td><button class="secondaryBtn">Edycja</button></td>
                             </tr>
 
-                        </tbody>
+                        --></tbody> 
                     </table>
                     <button class="primaryBtn addService">Dodaj usługę</button>
                 </div>

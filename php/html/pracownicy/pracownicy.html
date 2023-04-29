@@ -20,7 +20,7 @@
         <div class="container">
             <img src="/php/html/pracownicy/assets/logo.svg" alt="">
             <div class="nav-links">
-                <button class="secondaryBtn button ">Wyloguj</button>
+                <button class="secondaryBtn button " onclick="location.href ='/php/logout.php'">Wyloguj</button>
             </div>
         </div>
     </nav>
@@ -36,7 +36,7 @@
 
     <main>
         <div class="container">
-            <h2>Księgowość</h2>
+            <h2>Pracownicy</h2>
             <table>
                 <thead>
                     <tr>
@@ -48,8 +48,8 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                 <tbody id="table-body-pracownicy">
+                    <!-- <tr>
                         <td>Andrzej</td>
                         <td>
                             Małagocki
@@ -80,11 +80,12 @@
                         <td><button class="secondaryBtn">Edycja</button></td>
                     </tr>
 
-
-                </tbody>
+                -->
+                </tbody> 
             </table>
-            <button class="primaryBtn addService">Dodaj pracownika księgowości</button>
-            <h2>Handlowcy</h2>
+            <button class="primaryBtn addService" id="button-add-new-employee"
+                onclick="location.href = '/php/dodajPracownika.php'"> Dodaj pracownika </button>
+            <!-- <h2>Handlowcy</h2>
             <table>
                 <thead>
                     <tr>
@@ -129,7 +130,7 @@
                     </tr>
 
 
-                </tbody>
+                </tbody> 
             </table>
             <button class="primaryBtn addService">Dodaj pracownika handlowego</button>
             <h2>Opiekunowie</h2>
@@ -177,9 +178,9 @@
                     </tr>
 
 
-                </tbody>
+                </tbody> -->
             </table>
-            <button class="primaryBtn addService">Dodaj opiekuna</button>
+            <!-- <button class="primaryBtn addService">Dodaj opiekuna</button> -->
         </div>
     </main>
 

@@ -17,33 +17,25 @@
 
 <body>
     <div class="addProjectForm">
-        <h2>Dodawanie usługi</h2>
-        <form action="/php/dodajUsluge.php">
-            <input type="hidden" name="add_service">
-            <div class="inputField">
+        <h2>Edytuj usługę</h2>
+        <form action="/php/edytujUsluge.php" id="edit-form">
+            <div class="inputField" id="serviceNameInputField">
                 <label for="serviceName">Nazwa usługi:</label>
-                <input type="text" id="serviceName" name="serviceName">
-            </div>
-            <div class="inputField">
-                <label for="plannedEndDate">Planowane zakończenie:</label>
-                <input type="date" id="plannedEndDate" name="plannedEndDate">
-            </div>
-            <div class="inputField">
-                <label for="plannedCost">Planowany koszt:</label>
-                <input type="number" step="0.01" id="plannedCost" name="plannedCost">
             </div>
             <div class="inputField">
                 <label for="select-project">Przypisane do projektu:</label>
-                <select name="select-project" id="select-project">
-                    <option hidden selected disabled></option>
+                <select readonly name="selected-project" id="selected-project">
                 </select>
             </div>
             <div class="inputField">
-                <label for="comments">Uwagi:</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <label for="realEndDate">Realne zakończenie:</label>
+                <input type="date" id="realEndDate" name="realEndDate" required>
             </div>
-
-            <button type="submit" class="primaryBtn">Dodaj usługę</button>
+            <div class="inputField">
+                <label for="realCost">Realny koszt:</label>
+                <input type="number" step="0.01" id="realCost" name="realCost" required>
+            </div>
+            <button type="submit" class="primaryBtn">Edytuj projekt</button>
             <button type="button" class="primaryBtn" onclick="location.href = '/php/uslugi.php'">Anuluj</button>
         </form>
     </div>
